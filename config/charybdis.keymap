@@ -131,7 +131,7 @@
             bindings = <
 &to 0  &trans  &trans    &kp UP        &kp EQUAL  &trans               &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 1
 &to 2  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &bt BT_CLR    &trans        &trans        &trans        &to 3
-&to 4  &trans  &trans    &out OUT_TOG  &trans     &kp C_VOLUME_DOWN    &trans                &trans        &trans        &trans        &trans        &to 5
+&to 4  &trans  &trans    &out OUT_TOG  &trans     &kp C_VOLUME_DOWN    &kp C_BRI_DEC         &trans        &trans        &trans        &trans        &to 5
                          &trans        &trans     &trans               &trans                &trans
             >;
         };
