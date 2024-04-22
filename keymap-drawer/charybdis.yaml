@@ -139,10 +139,10 @@ layers:
   - '0'
   - {t: Game, h: toggle}
   - {t: Base, h: toggle}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - Gui+ A
+  - Gui+ S
+  - Gui+ D
+  - Gui+ F
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
@@ -151,10 +151,10 @@ layers:
   - F8
   - {t: Raise, h: toggle}
   - {t: Shortcut, h: toggle}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
   - '{'
   - '}'
   - F1
@@ -174,11 +174,11 @@ layers:
   - '3'
   - '4'
   - '5'
-  - LC(RA(Y))
-  - LC(RA(U))
-  - LC(RA(I))
-  - LC(RA(H))
-  - LC(RA(J))
+  - Ctl+AGr+ Y
+  - Ctl+AGr+ U
+  - Ctl+AGr+ I
+  - Ctl+AGr+ H
+  - Ctl+AGr+ J
   - {t: Base, h: toggle}
   - {t: Shortcut, h: toggle}
   - L
