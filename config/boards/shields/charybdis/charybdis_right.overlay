@@ -7,6 +7,7 @@
 #include "charybdis.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
+#include <input/processors/runtime-input-processor.dtsi>
 
 &default_transform {
 	col-offset = <6>;
@@ -69,8 +70,8 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    /* automouse: temporarily engage the Mouse layer (5) after trackball movement */
-    input-processors = <&zip_temp_layer 5 750>;
+    /* studio-editable scale/rotation + automouse (Trackball tab) */
+    input-processors = <&mouse_runtime_input_processor>;
 
     /* snipe: 1/3 speed while the Lower layer (1) is active */
     snipe {
@@ -79,4 +80,10 @@
       process-next;
     };
   };
+};
+
+&mouse_runtime_input_processor {
+  temp-layer-enabled;
+  temp-layer = <5>;
+  temp-layer-deactivation-delay-ms = <750>;
 };

@@ -37,5 +37,20 @@ manifest:
           - trusted-firmware-m
           - chre
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
+    - name: zmk-module-runtime-input-processor
+    - name: zmk-feature-custom-settings
+    - name: zmk-feature-fast-keymap
+    - name: zmk-feature-runtime-macro
+      import: true
+    - name: zmk-feature-runtime-combo
+      import: true
+    - name: zmk-module-ble-management
+    - name: zmk-feature-default-layer
+      revision: codex/custom-rpc-rewrite
+    - name: zmk-feature-os-detection
+    - name: zmk-module-settings-rpc
+    - name: zmk-feature-device-info
+    - name: zmk-feature-watchdog
+    - name: zmk-feature-kscan-diagnostics
   self:
     path: config
